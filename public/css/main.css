@@ -3,9 +3,9 @@
     margin: 0;
 }
 :root{
-    --primario: #254369;
-    --secundario: #254369;
-    --master: #1C293A;
+    --primario: #021D49;
+    --secundario: #0061BD;
+    --master: #1F49B6;
     --slave: #4167B0;
     --gray: #CBD5E1;
 }
@@ -34,12 +34,16 @@ img {
     src: url('../fonts/Futura/FuturaPTDemi.otf');
 }
 @font-face {
-    font-family: Roboto-Light;
-    src: url('../fonts/Roboto/Roboto-Light.ttf');
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 @font-face {
     font-family: Roboto-Medium;
     src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
 }
 @font-face {
     font-family: k2d-Normal;
@@ -69,8 +73,9 @@ img {
 .RobotoMedium{
     font-family: 'Roboto-Medium';
 } 
-.RobotoLigth{
-    font-family: 'Roboto-Ligth';
+ 
+.RobotoRegular{
+    font-family: 'Roboto-Regular';
 } 
 .K2dBold{
     font-family: 'k2d-Bold';
@@ -103,6 +108,14 @@ img {
 .fs_30px{
     font-size: 1.875rem;
 }
+.fs_85px{
+    font-size: 5.375rem;
+}
+
+
+
+/**** heading *****/
+
 
 /**** width y height ****/
 .w100vw{
@@ -120,6 +133,10 @@ img {
 }
 .h64px{
     height: 4rem;
+}
+.w200px{
+    padding: 8px;
+    width: 12.5rem;
 }
 
 
@@ -140,15 +157,18 @@ img {
     color: var(--gray);
 }
 
+.text-degradado{
+    color: #4168b04e;
+}
 
 /***** heading *****/
 h1, h2 h3, h4{
-    color: var(--primario);
-    font-family: 'Roboto-Medium';
+    color: var(--master);
+    font-family: 'K2D-Bold';
     text-transform: uppercase;   
 }
 h1{
-    font-size: 2rem;
+    font-size: 7rem;
 }
 h2{
     font-size: 2.5rem;
@@ -161,8 +181,7 @@ h5{
     color: #021D49;
 }
 p{
-    font-family: 'FuturaBook';
-    color: #021D49;
+    font-family: 'Roboto-Regular';
 }
 
 
@@ -179,6 +198,9 @@ p{
 }
 .bg__primario{
     background-color: var(--primario);
+}
+.bg__secundario{
+    background-color: var(--secundario);
 }
 .bg__gray-200{
     background-color: #D9D9D9;
