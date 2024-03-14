@@ -127,7 +127,9 @@ img {
 .w550px{
     width: 34.375rem;
 }
-
+.w-32px{
+    width: 2rem;
+}
 .w64px{
     width: 4rem;
 }
@@ -188,8 +190,8 @@ p{
 
 /***** Background *****/
 
-.bg__promociones{
-    background-image: url('../img/bg/kids_park.jpg');
+.bg__navetec{
+    background-image: url('../img/bg/navetec.jpg');
     background-position: center center;
     background-size: contain;
     background-repeat:  no-repeat;
