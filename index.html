@@ -57,20 +57,17 @@
 
                     </div>
                     <div class="col-9 d-flex align-items-end bg__navetec ">
-                        <div class="py-5">
-                            <span class="text-uppercase text-shadow text-white fs_85px RobotoBold">Navetec</span> 
-                            <!-- <img class=" ms-5 w64px" src="public/img/icons/play.svg" alt=""> -->
-                            <div class="">
-                                <div id="video-container">
-                                    <video id="video-player" controls>
-                                        <source src="tu_video.mp4" type="video/mp4">
-                                        Tu navegador no soporta la reproducción de videos.
-                                    </video>
-                                    <button id="fullscreen-button">Pantalla Completa</button>
-                                </div>
-                            </div>
+                        <div class="d-flex ">
+                            <span class="text-uppercase text-shadow text-white fs_85px RobotoBold me-5 pb-5">Navetec</span> 
+                            <button id="playButton" class="btn-94">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 6v12l10-6z"></path></svg>
+                              </button>
                         </div>
                     </div>
+                    <video id="videoPlayer" style="display: none;" controls>
+                        <source src="./public/video/sherpa.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
                 </div>
             </div>
         </div>
@@ -82,9 +79,13 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="d-flex flex-column justify-content-around h-100">
-                            <div class="">
-                                <label for="">¿Cuanto desea Invertir?</label>
-                                <input type="text" placeholder="$100000">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><span class="text-slave K2dMedium"> ¿Cuánto quieres invertir?</span></label>
+                                <select id="investment-select" class="form-select w-75" aria-label="Default select example">
+                                    <option value="1000000"><span>$ 1,000,000.00 MXN</span></option>
+                                    <option value="2000000"><span>$ 2,000,000.00 MXN</span></option>
+                                    <option value="3000000"><span>$ 3,000,000.00 MXN</span></option>
+                                  </select>
                             </div>
                             <div class="">
                                 <table class="table table-hover border-0">
@@ -118,7 +119,7 @@
 
                     <div class="col-12">
                         <p class="" style="font-size: 14px;">* Esto solo es un simulador de inversión de carácter informativo, por lo que el monto
-                            resultante en el mismo no generará ninguna obligación por parte de 100Ladrillos, sus
+                            resultante en el mismo no generará ninguna obligación por parte de La Empresa, sus
                             filiales, socios o cualquier persona relacionada para el cumplimiento del mismo. Todas las
                             inversiones se apegarán a los términos y condiciones así como a los contratos
                             correspondientes para cada fideicomiso. <box-icon name='plus-medical' ></box-icon></p>
@@ -298,11 +299,11 @@
                             tellus. Mollis aliquam ut porttitor. Nibh tortor id aliquet lectus proin nibh. At imperdiet
                             dui accumsan sit amet nulla facilisi morbi tempus. Nunc non blandit massa enim.</p>
                         <!-- texto del elemento Vision    -->
-                        <div class="">
+                        <div class="d-flex justify-content-center align-items-center ms-3">
                             <div class="">
-                                <img src="" alt="">
+                                <img class="w-32px" src="public/img/icons/bx-plus-medical 2.svg" alt="">
                             </div>
-                            <div class="">
+                            <div class="ms-4">
                                 <span class="text-uppercase text-white K2dBold fs_24px">Visión</span>
                                 <p class="text-white">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
@@ -311,11 +312,11 @@
                             </div>
                         </div>
                         <!-- texto del elemento Mision    -->
-                        <div class="">
+                        <div class="d-flex justify-content-center align-items-center ms-3">
                             <div class="">
-                                <img src="" alt="">
+                                <img class="w-32px" src="public/img/icons/bx-plus-medical 2.svg" alt="">
                             </div>
-                            <div class="">
+                            <div class="ms-4">
                                 <span class="text-uppercase text-white K2dBold fs_24px">Visión</span>
                                 <p class=" text-white">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
@@ -462,7 +463,7 @@
                         <h3 class="text-white my-5"> FULL PROJECT PORTFOLIO <br> <span class="ps-4">ARCHITECTURAL DESIGNER </span></h3>
                     </div>
                     <div class="col-6">
-                        <div class=" d-flex justify-content-end">
+                        <div class=" d-flex justify-content-end py-5">
                             <a class="btn-master me-3" href="" > Ver Mas <i class='bx bx-plus'></i> </a>
                             <a class="btn-24">Contacto <i class='bx bxs-send' ></i> </a>
                         </div>
@@ -470,23 +471,39 @@
                 </div>
                 <div class="row">
                     <div class="col-3">
-                        <div class="">
-                            <img src="public/img/content/photo-1.jpg" alt="">
+                        <div class="card" style="background-image: url('public/img/content/photo-1.jpg');">
+                            <div class="card-content">
+                                <h3 class="fs_24px text-slave">DOWNTOWN 1</h3>
+                                <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing tristique risus nec feugiat. In hendrerit gravida rutrum quisque non tellus. 
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="">
-                            <img src="public/img/content/photo-2.jpg" alt="">
+                        <div class="card" style="background-image: url('public/img/content/photo-2.jpg');">
+                            <div class="card-content">
+                                <h3 class="fs_24px text-slave">DOWNTOWN 2</h3>
+                                <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing tristique risus nec feugiat. In hendrerit gravida rutrum quisque non tellus. 
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="">
-                            <img src="public/img/content/photo-3.jpg" alt="">
+                        <div class="card" style="background-image: url('public/img/content/photo-3.jpg');">
+                            <div class="card-content">
+                                <h3 class="fs_24px text-slave">DOWNTOWN 3</h3>
+                                <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing tristique risus nec feugiat. In hendrerit gravida rutrum quisque non tellus. 
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="">
-                            <img src="public/img/content/photo-4.jpg" alt="">
+                        <div class="card" style="background-image: url('public/img/content/photo-4.jpg');">
+                            <div class="card-content">
+                                <h3 class="fs_24px text-slave">DOWNTOWN 4</h3>
+                                <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing tristique risus nec feugiat. In hendrerit gravida rutrum quisque non tellus. 
+                                    </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -632,24 +649,6 @@
         </div>
     </footer>
 
-
-    <script>
-        const videoPlayer = document.getElementById('video-player');
-        const fullscreenButton = document.getElementById('fullscreen-button');
-    
-        fullscreenButton.addEventListener('click', () => {
-            if (videoPlayer.requestFullscreen) {
-                videoPlayer.requestFullscreen();
-            } else if (videoPlayer.mozRequestFullScreen) { /* Firefox */
-                videoPlayer.mozRequestFullScreen();
-            } else if (videoPlayer.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-                videoPlayer.webkitRequestFullscreen();
-            } else if (videoPlayer.msRequestFullscreen) { /* IE/Edge */
-                videoPlayer.msRequestFullscreen();
-            }
-        });
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
     <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -657,6 +656,7 @@
     </script>
     <script src="public/js/main.js"></script>
     <script src="public/js/mapa.js"></script>
+    <script src="public/js/playvideo.js"></script>
 
 </body>
 
