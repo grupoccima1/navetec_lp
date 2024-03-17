@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304.5 62.91">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-4 {
+        font-size: 38.06px;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-6 {
+        font-family: CenturyGothic-Bold, 'Century Gothic';
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-8 {
+        letter-spacing: .02em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-6 {
+        font-size: 16.92px;
+        letter-spacing: .04em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        font-family: CenturyGothic, 'Century Gothic';
+        font-size: 30.86px;
+      }
+    </style>
+  </defs>
+  <g id="Navetec">
+    <g>
+      <g>
+        <text class="cls-7" transform="translate(174.13 27.61)"><tspan x="0" y="0">BUSINESS</tspan><tspan class="cls-1" x="0" y="25.84">P</tspan><tspan x="16.38" y="25.84">ARK</tspan></text>
+        <rect class="cls-5" x="144.61" y="29" width="48.14" height=".85" transform="translate(139.26 198.11) rotate(-90)"/>
+      </g>
+      <g>
+        <g>
+          <text class="cls-4" transform="translate(.31 32.7)"><tspan class="cls-3" x="0" y="0">N</tspan><tspan class="cls-2" x="25.68" y="0">A</tspan><tspan class="cls-9" x="49.23" y="0">V</tspan><tspan class="cls-8" x="74.93" y="0">E</tspan><tspan class="cls-10" x="95.49" y="0">TEC</tspan></text>
+          <rect class="cls-5" y="36.14" width="161.37" height="1.7"/>
+        </g>
+        <text class="cls-6" transform="translate(106.28 53.44)"><tspan x="0" y="0">CELTA</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

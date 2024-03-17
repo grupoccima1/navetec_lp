@@ -6,7 +6,7 @@
     --primario: #021D49;
     --secundario: #0061BD;
     --master: #1F49B6;
-    --slave: #4167B0;
+    --slave: #568CCA;
     --gray: #CBD5E1;
 }
 *{
@@ -162,6 +162,9 @@ img {
 .text-degradado{
     color: #4168b04e;
 }
+.text-shadow{
+    text-shadow: 3px 2px 1px rgba(0,0,0,0.31);
+}
 
 /***** heading *****/
 h1, h2 h3, h4{
@@ -287,3 +290,283 @@ p{
  .newsletter-button{
     border-radius: 0 15px 15px 0;
  }
+ .btn-primary{
+    background-color: var(--primario);
+ }
+
+ .caracteristicas-box:hover{
+    background-color: #A8CEFF;
+ }
+
+ .caracteristicas-box:hover span, 
+ .caracteristicas-box:hover h4,
+ .caracteristicas-box:hover p{
+    color: #fff !important;
+}
+
+.parks-logos img{
+    padding: 15px;
+    border: #0061BD solid 1px;
+}
+
+
+.parks-logos:hover{
+    background-color: #021D49;
+}
+.parks-logos:hover img{
+    filter: #fff;
+}
+
+
+/* Animacion de Botones */
+
+
+.btn-master,
+.btn-master *,
+.btn-master :after,
+.btn-master :before,
+.btn-master:after,
+.btn-master:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-master {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #021D49;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto-Medium';
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-decoration: none;
+}
+.btn-master:disabled {
+  cursor: default;
+}
+.btn-master:-moz-focusring {
+  outline: auto;
+}
+.btn-master svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-master [hidden] {
+  display: none;
+}
+.btn-master {
+  --background: #021D49;
+  background: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-master span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.btn-master:after,
+.btn-master:before {
+  --tilt: 20px;
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+.btn-master:after {
+  --thickness: 2px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+.btn-master:hover  {
+  color: #fff;
+}
+.btn-master:hover span {
+  transform: translateX(-20px);
+  color: #fff;
+}
+
+.btn-master:hover:after,
+.btn-master:hover:before {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+}
+
+
+.btn-24,
+.btn-24 *,
+.btn-24 :after,
+.btn-24 :before,
+.btn-24:after,
+.btn-24:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-24 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #0061BD;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto-Medium';
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-decoration: none;
+}
+.btn-24:disabled {
+  cursor: default;
+}
+.btn-24:-moz-focusring {
+  outline: auto;
+}
+.btn-24 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-24 [hidden] {
+  display: none;
+}
+.btn-24 {
+  --background: #0061BD;
+  background: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-24 span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.btn-24:after,
+.btn-24:before {
+  --tilt: 20px;
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+.btn-24:after {
+  --thickness: 2px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+.btn-24:hover {
+ color: #fff;
+}
+.btn-24:hover span {
+  transform: translateX(-20px);
+}
+.btn-24:hover:after,
+.btn-24:hover:before {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+
+}
+
+
+
+.svg-container {
+    position: relative;
+    min-width: 150px;
+    width: calc(100% - 10px);
+    padding: 32px; 
+    margin-top: 24px;
+    overflow: hidden;
+    transition: transform 0.1s ease-in-out; /* Transición suave para el cambio de imagen */
+  }
+  
+  .logo-svg {
+    display: block;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.1s ease-in-out; /* Transición suave para el cambio de imagen */
+  }
+  
+  .logo-blanco {
+    transform: scale(0);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Color de fondo inicial */
+    pointer-events: none; /* Evita que el div overlay interfiera con el clic en el SVG */
+  }
+  .svg-container:hover  {
+    background-color: #021D49;
+  }
+  .svg-container:hover .logo-azul {
+    transform: scale(0);
+  }
+  
+  .svg-container:hover .logo-blanco {
+    transform: scale(1);
+  }
+  

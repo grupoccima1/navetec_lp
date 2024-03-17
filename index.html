@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Css Principal -->
     <link rel="stylesheet" href="public/css/main.css">
+    
     <title>Navetec | Home </title>
 </head>
 
@@ -20,50 +24,31 @@
                 <div class="container">
                     <div class="">
                         <div class="">
-                            <img class="log" src="public/img/logo_main.png" alt="">
+                            <a href="">
+                                <img class="p-1"  src="public/img/logos/nav_logo.svg" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-
-                    <div class="">
-                        <div class="collapse navbar-collapse justify-content-end Roboto-Medium" id="navbarNav">
-                            <ul class="navbar-nav ">
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="#">Nosotros</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="#">Vacantes</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="#">Filosofia</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="#">Nuestros proyectos</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <a class="btn-master me-3" href="#" >Llamada <i class='bx bxs-phone' ></i></a>
+                        <a class="btn-24" href="#" >Whatsapp <i class='bx bxl-whatsapp' ></i></a>
                     </div>
                 </div>
             </nav>
         </header>
     </header>
     <main>
+        <!-- hero -->
         <div class="hero bg__primario d-flex flex-column justify-content-center vh-100">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row my-5">
                     <div class="col-3">
                         <div class="">
                             <div class="row py-4">
-                                <div class="col-6 border border-1"></div>
-                                <div class="col-6 border border-1"></div>
-                                <div class="col-6 border border-1"></div>
-                                <div class="col-6 border border-1"></div>
+                                <div class="col-6"> <img class="p-4" src="public/img/icons/Shield.svg" alt=""></div>
+                                <div class="col-6"> <img class="p-4" src="public/img/icons/Money.svg" alt=""></div>
+                                <div class="col-6"> <img class="p-4" src="public/img/icons/Components.svg" alt=""></div>
+                                <div class="col-6"> <img class="p-4" src="public/img/icons/Hat-hard.svg" alt=""></div>
                             </div>
                             <div class="">
                                 <h2 class="text-white fs_20px">Somos el Aliado Estratégico de América. Creamos Inversiones Extraordinarias</h2>
@@ -71,10 +56,85 @@
                         </div>
 
                     </div>
-                    <div class="col-9 bg__navetec"></div>
+                    <div class="col-9 d-flex align-items-end bg__navetec ">
+                        <div class="py-5">
+                            <span class="text-uppercase text-shadow text-white fs_85px RobotoBold">Navetec</span> 
+                            <!-- <img class=" ms-5 w64px" src="public/img/icons/play.svg" alt=""> -->
+                            <div class="">
+                                <div id="video-container">
+                                    <video id="video-player" controls>
+                                        <source src="tu_video.mp4" type="video/mp4">
+                                        Tu navegador no soporta la reproducción de videos.
+                                    </video>
+                                    <button id="fullscreen-button">Pantalla Completa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- simulador de Inveriones -->
+        <section class="seccion">
+            <div class="container">
+                <h2 class="text-uppercase text-center text-secundario  K2dBold py-3"> Simulador de Inversiones </h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="d-flex flex-column justify-content-around h-100">
+                            <div class="">
+                                <label for="">¿Cuanto desea Invertir?</label>
+                                <input type="text" placeholder="$100000">
+                            </div>
+                            <div class="">
+                                <table class="table table-hover border-0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-slave K2dMedium">Inversión inicial</td>
+                                            <td class="text-slave K2dBold"> $<span>100,000.00 MXN </span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-slave K2dMedium">Plusvalía estimada</td>
+                                            <td class="text-slave K2dBold"> $<span>100,000.00 MXN </span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-slave K2dMedium">Renta total estimada</td>
+                                            <td class="text-slave K2dBold"> $<span>100,000.00 MXN </span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-slave K2dMedium">Valor final de la inversion</td>
+                                            <td class="text-slave K2dBold"> $<span>100,000.00 MXN </span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div id="chart" class="charts"></div>
+                    </div>
+
+                    <div class="col-12">
+                        <p class="" style="font-size: 14px;">* Esto solo es un simulador de inversión de carácter informativo, por lo que el monto
+                            resultante en el mismo no generará ninguna obligación por parte de 100Ladrillos, sus
+                            filiales, socios o cualquier persona relacionada para el cumplimiento del mismo. Todas las
+                            inversiones se apegarán a los términos y condiciones así como a los contratos
+                            correspondientes para cada fideicomiso. <box-icon name='plus-medical' ></box-icon></p>
+
+                        <p class="" style="font-size: 14px;">** La plusvalía es la apreciación del inmueble con el paso del tiempo. Para calcularla, se
+                            consideran los siguientes factores: 1 Reposición del activo, 2 Oferta y demanda, y 3
+                            Rendimiento financiero.</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center pt-5">
+                        <a class="btn-master me-3" href="" > Ver Mas <i class='bx bx-plus'></i> </a>
+                        <a class="btn-24">Contacto <i class='bx bxs-send' ></i> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- about -->
         <section class="seccion">
             <div class="container">
@@ -90,8 +150,8 @@
                             sed lectus vestibulum mattis ullamcorper velit. Scelerisque felis imperdiet proin fermentum
                             leo vel orci porta. Eu volutpat odio facilisis mauris</p>
                         <div class=" pt-3">
-                            <a class="btn btn-primary w200px me-3" href="#">Ver Más </a>
-                            <a class="btn btn-secondary w200px" href="#">Contacto</a>
+                            <a class="btn-master me-3" href="" > Ver Mas <i class='bx bx-plus'></i> </a>
+                            <a class="btn-24">Contacto <i class='bx bxs-send' ></i> </a>
                         </div>
 
                     </div>
@@ -112,43 +172,108 @@
                 </div>
             </div>
         </section>
+
         <!-- logos de las Marcas -->
         <section class="seccion">
-            <div class="container">
+            <div class="container-fluid">
                 <h2 class="text-master K2dMedium fs_26px py-3 text-center"> Architecture should speak of its time and place.</h2>
                 <div class="row justify-content-center">
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Aeropuerto_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/Aeropuerto.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Aeropuerto.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Beta_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/Beta.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Beta.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Calamanda_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/Celta.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Celta.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Celta_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/Celta.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Celta.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Gamma_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/Gamma_.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Gamma.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Gamma_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/gamma_II.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Gamma_II.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-La_Presa_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/La_Presa.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/La_Presa.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Pedro_Escobedo_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/Pedro_Escobedo.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Pedro_Escobedo.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <img class="mt-3" src="public/img/logos/navetec_santaRosa.svg" alt="">
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Santa_Rosa_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/Santa_Rosa.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Santa_Rosa.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                     </div>
+                    <div class="col-3">
+                        <a href="https://grupoccima.com/#!/Navetec-Sur_57_Business_Park">
+                            <div class="svg-container">
+                                <img src="public/img/logos/navetec_blue/Sur_57.svg" alt="Logo" class="logo-svg logo-azul">
+                                <img src="public/img/logos/navetec_white/Sur_57.svg" alt="Logo" class="logo-svg logo-blanco">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- objetios -->
+        <!-- objetivos -->
         <section class="seccion bg__primario">
             <div class="container">
                 <div class="row">
@@ -206,52 +331,52 @@
 
         <!-- carateristicas -->
         <section class="seccion">
-            <h2 class="text-ippercase text-center K2dBold py-3"> OVERVIEW</h2>
+            <h2 class="text-uppercase text-secundario text-center K2dBold mb-5">Características de Nuestros Parques</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-3 border-bottom border-end border-primary">
+                    <div class="col-3 caracteristicas-box border-bottom border-end border-primary">
                         <span class="K2dBold fs_85px text-degradado">01</span>
                         <h4 class="K2dBold fs_24px">Plataforma Niveladora</h4>
                         <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
                             lectus sit. Adipiscing tristique risus nec</p>
                     </div>
-                    <div class="col-3 border-bottom border-end border-primary">
+                    <div class="col-3 caracteristicas-box border-bottom border-end border-primary">
                         <span class="K2dBold fs_85px text-degradado">02</span>
                         <h4 class="K2dBold fs_24px">Plataforma Niveladora</h4>
                         <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
                             lectus sit. Adipiscing tristique risus nec</p>
                     </div>
-                    <div class="col-3 border-bottom border-end border-primary">
+                    <div class="col-3 caracteristicas-box border-bottom border-end border-primary">
                         <span class="K2dBold fs_85px text-degradado">03</span>
                         <h4 class="K2dBold fs_24px">Plataforma Niveladora</h4>
                         <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
                             lectus sit. Adipiscing tristique risus nec</p>
                     </div>
-                    <div class="col-3 border-bottom border-primary">
+                    <div class="col-3 caracteristicas-box border-bottom border-primary">
                         <span class="K2dBold fs_85px text-degradado">04</span>
                         <h4 class="K2dBold fs_24px">Plataforma Niveladora</h4>
                         <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
                             lectus sit. Adipiscing tristique risus nec</p>
                     </div>
-                    <div class="col-3 border-end border-primary">
+                    <div class="col-3 caracteristicas-box border-end border-primary">
                         <span class="K2dBold fs_85px text-degradado">05</span>
                         <h4 class="K2dBold fs_24px">Plataforma Niveladora</h4>
                         <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
                             lectus sit. Adipiscing tristique risus nec</p>
                     </div>
-                    <div class="col-3 border-end border-primary">
+                    <div class="col-3 caracteristicas-box border-end border-primary">
                         <span class="K2dBold fs_85px text-degradado">06</span>
                         <h4 class="K2dBold fs_24px">Plataforma Niveladora</h4>
                         <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
                             lectus sit. Adipiscing tristique risus nec</p>
                     </div>
-                    <div class="col-3 border-end border-primary">
+                    <div class="col-3 caracteristicas-box border-end border-primary">
                         <span class="K2dBold fs_85px text-degradado">07</span>
                         <h4 class="K2dBold fs_24px">Plataforma Niveladora</h4>
                         <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
                             lectus sit. Adipiscing tristique risus nec</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 caracteristicas-box">
                         <span class="K2dBold fs_85px text-degradado">08</span>
                         <h4 class="K2dBold fs_24px">Plataforma Niveladora</h4>
                         <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
@@ -260,61 +385,7 @@
                 </div>
             </div>
         </section>
-        <!-- simulador de Inveriones -->
-        <section class="seccion">
-            <div class="container">
-                <h2 class="text-ippercase text-center K2dBold py-3"> Simulador de Inversiones</h2>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="">
-                            <label for="">¿Cuanto desea Invertir?</label>
-                            <input type="text" placeholder="$100000">
-
-                            <table class="table table-hover border-0">
-                                <tbody>
-                                    <tr>
-                                        <td>Inversión inicial</td>
-                                        <td> $<span>100,000.00 MXN </span> </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Plusvalía estimada</td>
-                                        <td> $<span>100,000.00 MXN </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Renta total estimada</td>
-                                        <td> $<span>100,000.00 MXN </span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Valor final de la inversion</td>
-                                        <td> $<span>100,000.00 MXN </span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div id="chart" class="charts"></div>
-                    </div>
-
-                    <div class="col-12">
-                        <p class="" style="font-size: 14px;">* Esto solo es un simulador de inversión de carácter informativo, por lo que el monto
-                            resultante en el mismo no generará ninguna obligación por parte de 100Ladrillos, sus
-                            filiales, socios o cualquier persona relacionada para el cumplimiento del mismo. Todas las
-                            inversiones se apegarán a los términos y condiciones así como a los contratos
-                            correspondientes para cada fideicomiso.</p>
-
-                        <p class="" style="font-size: 14px;">** La plusvalía es la apreciación del inmueble con el paso del tiempo. Para calcularla, se
-                            consideran los siguientes factores: 1 Reposición del activo, 2 Oferta y demanda, y 3
-                            Rendimiento financiero.</p>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center pt-5">
-                        <button type="button" class="btn btn-primary w200px me-3">Ver Mas</button>
-                        <button type="button" class="btn btn-secondary w200px">Contacto</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- Nuestros Clientes -->
         <section class="seccion">
             <div class="container">
@@ -339,34 +410,34 @@
         <!-- testimoniales -->
         <section class="seccion ">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-around">
                     <div class="col-6">
-                        <img src="public/img/content/gamma_1.png" alt="imagen de planes coreccionar las Naves">
+                        <img src="public/img/content/casa_01.jpg" alt="imagen de planes coreccionar las Naves">
                         <div class="d-flex">
                             <div class="bg__secundario text-center">
                                 <span class="K2dBold text-white" style="font-size: 96px;">+1k</span>
                                 <span class="RobotoMedium text-white" style="font-size: 28px;">Empresarios<br> Satisfechos</span>
                             </div>
                             <div class="bg__gray-200">
-                                <h5 class="K2dBold text-center py-3"> Testimoniales</h5>
-                                <div class="d-flex">
+                                <h5 class="K2dBold text-slave text-center py-3"> Testimoniales</h5>
+                                <div class="d-flex ps-2 pt-5">
                                     <div class="">
-                                        <img src="" alt="">
+                                        <img src="public/img/content/testimonio.jpg" alt="">
                                     </div>
-                                    <div class="" style="display: inline-flex; flex-direction: column; width: 350px;">
-                                        <span class="K2dBold fs_20px">Alfredo Villamar </span>
-                                        <span class="">Empresario Colombiano</span>
-                                        <span class="">CEO Logistic Pacifico</span>
+                                    <div class="ps-3" style="display: inline-flex; flex-direction: column; width: 350px;">
+                                        <span class="K2dBold text-slave fs_20px">Alfredo Villamar </span>
+                                        <span class="K2dMedium ">Empresario Colombiano</span>
+                                        <span class="K2dMedium">CEO Logistic Pacifico</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h3 class="text-ippercase K2dBold py-3"> OVERVIEW</h3>
-                        <blockquote class="">
-                            <img src="" alt=""> <span>A great building</span> must begin with the unmeasurable, must go
-                            through measurable means when it is being designed, and in the end must be unmeasurable.
+                    <div class="col-5 d-flex flex-column justify-content-end">
+                        <h3 class="K2dBold text-secundario text-uppercase  py-3">TESTED & TRUSTED</h3>
+                        <blockquote class="fs_22px">
+                            <img class="w-32px" src="public/img/icons/comillas1.svg" alt=""> <span class="bg__bluetrasparent">A great building </span> must begin with the unmeasurable, must go
+                            through measurable means when it is being designed, and in the end must be unmeasurable. <img class="w-32px" src="public/img/icons/comillas2.svg" alt="">
                         </blockquote>
                         <p class="mt-5">
                             In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut
@@ -375,8 +446,8 @@
                             At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Nunc non blandit massa enim.
                         </p>
                         <div class="">
-                            <a href="" target="_blank" class="btn btn-primary  w200px me-3">Ver Mas</a>
-                            <a href="" target="_blank" class="btn btn-info w200px">Contacto</a>
+                            <a class="btn-master me-3" href="" > Ver Mas <i class='bx bx-plus'></i> </a>
+                            <a class="btn-24">Contacto <i class='bx bxs-send' ></i> </a>
                         </div>
                     </div>
                 </div>
@@ -392,8 +463,8 @@
                     </div>
                     <div class="col-6">
                         <div class=" d-flex justify-content-end">
-                            <a href="" class="btn btn-primary w200px me-3">Ver Mas</a>
-                            <a href="" class="btn btn-secondary w200px"> Contacto</a>
+                            <a class="btn-master me-3" href="" > Ver Mas <i class='bx bx-plus'></i> </a>
+                            <a class="btn-24">Contacto <i class='bx bxs-send' ></i> </a>
                         </div>
                     </div>
                 </div>
@@ -427,9 +498,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-7">
-                        <h1 class=" fs_128px">COMPANY <br> OVERVIEW</h1>
-                        <span class="text-master K2dMedium fs_26px py-3">Architecture should speak of its time and place.</span>
-                        <p>In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
+                        <h1 class=" fs_128px">PROXIMO <br> PROYECTO</h1>
+                        <span class="text-master K2dMedium fs_26px ">Ubicado en el Norte de la Carretera 57</span>
+                        <p class="pt-3">In tellus integer feugiat scelerisque varius morbi enim. Turpis massa tincidunt dui ut ornare
                             lectus sit. Adipiscing tristique risus nec feugiat. In hendrerit gravida rutrum quisque non
                             tellus. Mollis aliquam ut porttitor. Nibh tortor id aliquet lectus proin nibh. At imperdiet
                             dui accumsan sit amet nulla facilisi morbi tempus. Nunc non blandit massa enim.</p>
@@ -437,8 +508,8 @@
                             sed lectus vestibulum mattis ullamcorper velit. Scelerisque felis imperdiet proin fermentum
                             leo vel orci porta. Eu volutpat odio facilisis mauris</p>
                         <div class=" pt-3">
-                            <a class="btn btn-primary w200px me-3" href="#">Ver Más </a>
-                            <a class="btn btn-secondary w200px" href="#">Contacto</a>
+                            <a class="btn-master me-3" href="" > Ver Mas <i class='bx bx-plus'></i> </a>
+                            <a class="btn-24">Contacto <i class='bx bxs-send' ></i> </a>
                         </div>
 
                     </div>
@@ -486,9 +557,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="">
-                            <a href="" class="btn btn-primary w200px me-3">Ver Mas</a>
-                            <a href="" class="btn btn-secondary w200px ">Contacto</a>
+                        <div class=" text-center">
+                            <a class="btn-master me-3" href="" > Ver Mas <i class='bx bx-plus'></i> </a>
+                            <a class="btn-24">Contacto <i class='bx bxs-send' ></i> </a>
                         </div>
                     </div>
                 </div>
@@ -544,22 +615,40 @@
                     </h4>
                 </div>
                 <div class="col-12 col-lg-4 text-center text-lg-end">
-                    <a class="social" rel="nofollow" href="#" target="_blank">
+                    <a class="social text-decoration-none" rel="nofollow" href="#" target="_blank">
                         <img class="w-32px" src="./public/img/icons/social_media/youtube.svg" alt="">
                     </a>
-                    <a class="social" rel="nofollow" href="#" target="_blank">
+                    <a class="social text-decoration-none" rel="nofollow" href="#" target="_blank">
                         <img class="w-32px" src="./public/img/icons/social_media/facebook.svg" alt="">
                     </a>
-                    <a class="social" rel="nofollow" href="#" target="_blank">
+                    <a class="social text-decoration-none" rel="nofollow" href="#" target="_blank">
                         <img class="w-32px" src="./public/img/icons/social_media/Whatsapp.svg" alt="">
                     </a>
-                    <a class="social" rel="nofollow" href="#" target="_blank">
+                    <a class="social text-decoration-none" rel="nofollow" href="#" target="_blank">
                         <img class="w-32px" src="./public/img/icons/social_media/Instagram.svg" alt="">
                     </a>
                 </div>
             </div>  
         </div>
     </footer>
+
+
+    <script>
+        const videoPlayer = document.getElementById('video-player');
+        const fullscreenButton = document.getElementById('fullscreen-button');
+    
+        fullscreenButton.addEventListener('click', () => {
+            if (videoPlayer.requestFullscreen) {
+                videoPlayer.requestFullscreen();
+            } else if (videoPlayer.mozRequestFullScreen) { /* Firefox */
+                videoPlayer.mozRequestFullScreen();
+            } else if (videoPlayer.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                videoPlayer.webkitRequestFullscreen();
+            } else if (videoPlayer.msRequestFullscreen) { /* IE/Edge */
+                videoPlayer.msRequestFullscreen();
+            }
+        });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
     <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
