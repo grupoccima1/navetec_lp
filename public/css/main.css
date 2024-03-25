@@ -108,6 +108,22 @@ img {
 .fs_30px{
     font-size: 1.875rem;
 }
+.fs_46px{
+    font-size: 2.875rem;
+}
+.fs_48px{
+    font-size: 3rem;
+}
+.fs_50px{
+    font-size: 3.125rem;
+}
+.fs_52px{
+    font-size: 3.25rem;
+}
+.fs_54px{
+    font-size: 3.375rem;
+}
+
 .fs_85px{
     font-size: 5.375rem;
 }
@@ -665,3 +681,6 @@ p{
 .card:hover .card-content {
     transform: translateY(0);
 }
+
+
+/* modificaciones al bootstrap 5 */
