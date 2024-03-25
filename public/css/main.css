@@ -196,10 +196,9 @@ p{
 .bg__navetec{
     background-image: url('../img/bg/navetec.jpg');
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-repeat:  no-repeat;
-    height: 70vh;
-    background-attachment: fixed;
+    height: 100vh;
 }
 .bg__primario{
     background-color: var(--primario);
