@@ -185,8 +185,7 @@ img {
 /***** heading *****/
 h1, h2 h3, h4{
     color: var(--master);
-    font-family: 'K2D-Bold';
-    text-transform: uppercase;   
+    font-family: 'K2D-Bold';   
 }
 h1{
     font-size: 7rem;
@@ -246,6 +245,43 @@ p{
 .left-1{
     left: 1rem;
 }
+
+
+/* iconos caracteristicas */
+.carateristicas-box{
+  height: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#infraestructura{
+  width: 3.75rem;
+}
+#carriers{
+  width: 7.438rem;
+}
+#agua{
+  width: 4rem;
+}
+#administracion{
+  width: 9.438rem;
+}
+#mantenimiento{
+  width: 6.188rem;
+}
+#cctv{
+  width: 6.438rem;
+}
+#seguridad{
+  width: 4.875rem;
+}
+#business{
+  width: 7.438rem;
+}
+
 
 /* parallax-section */
 .parallax-section {
